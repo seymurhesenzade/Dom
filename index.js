@@ -1,10 +1,31 @@
-const inc= document.getElementById("inc");
-const dec= document.getElementById("dec");
-const counter =document.getElementById("counter");
+const addBtn = document.getElementById("btn");
+const clearBtn = document.getElementById("clearbtn");
+const toDoContainer = document.getElementById("toDoContainer");
+const inputText= document.getElementById("inputText");
+// -------------------------------------------------------
+addBtn.addEventListener("click", function(){
+    let paragraph = document.createElement("p");
+toDoContainer.appendChild(paragraph);
+paragraph.innerHTML=inputText.value;
 
-inc.addEventListener("click", (e) => {
-  counter.innerHTML++
+
+paragraph.addEventListener("dblclick", function(){
+    toDoContainer.removeChild(paragraph);
 })
-dec.addEventListener("click", (e) => {
-  counter.innerHTML--
-})
+});
+
+clearBtn.addEventListener("click", function(){
+    while (toDoContainer.firstChild) {
+        toDoContainer.removeChild(toDoContainer.firstChild);
+    }
+});
+
+
+
+
+
+
+
+
+
+

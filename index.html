@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./index.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
     
-    <div class="elmeddin">
-        <button style="width: 70px; height: 30px; border-radius: 20px;  "  id="inc">increase</button>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>Todo App</p>
+        <input
+          class="inp"
+          type="text"
+          name=""
+          id="inputText"
+          placeholder="Add your new todo" />
+       
+        <button id="btn">Add</button> 
+        <button id="clearbtn">Clear All</button>  
+       <div class="to-dos" id="toDoContainer">
 
-        <span id="counter">0</span>
-
-        <button style="width: 70px; height: 30px; border-radius: 20px;"  id="dec">decrease</button>
+       </div>
+      </div>
     </div>
-    
+  <script src="./index.js"></script>
 </body>
 </html>
