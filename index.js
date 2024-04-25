@@ -7,6 +7,7 @@ addBtn.addEventListener("click", function(){
     let paragraph = document.createElement("p");
 toDoContainer.appendChild(paragraph);
 paragraph.innerHTML=inputText.value;
+inputText.value="";
 
 
 paragraph.addEventListener("dblclick", function(){
