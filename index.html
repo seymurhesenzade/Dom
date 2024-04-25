@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
-    
+    <style>
+      .error-border {
+        border: 2px solid rgb(177, 0, 0);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -14,17 +18,21 @@
         <input
           class="inp"
           type="text"
-          name=""
           id="inputText"
-          placeholder="Add your new todo" />
-       
-        <button id="btn">Add</button> 
-        <button id="clearbtn">Clear All</button>  
-       <div class="to-dos" id="toDoContainer">
+          placeholder="Add your new todo"
+        />
 
-       </div>
+        <button id="btn">Add</button>
+        <button id="clearbtn">Clear All</button>
+        <div
+          style="background-color: black"
+          class="to-dos"
+          id="toDoContainer"
+        ></div>
       </div>
     </div>
-  <script src="./index.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #57b2da;
+  background-color: #ffffff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container {
@@ -12,7 +12,7 @@
 .box {
   width: 500px;
   height: 250px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin-left: 390px;
   margin-top: 230px;
   border-radius: 10px;
@@ -26,8 +26,8 @@ p {
   font-weight: 600;
   font-size: 30px;
   margin-left: 10px;
-  background-color: white;
-  color: rgb(35, 35, 35);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .inp {
   background-color: white;
